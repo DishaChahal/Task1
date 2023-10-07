@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Page with CSS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Internal Style for Centering */
+        body {
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue;">My HTML Page</h1>
+
+    <!-- Image Tag with Inline Style -->
+    <img src="https://picsum.photos/200/300.jpg" alt="Sample Image" style="width: 300px; height: 200px; border: 2px solid black;">
+    <br>
+    <!-- Table Tag with Internal Style -->
+    <table style="border-collapse: collapse; width: 50%;">
+        <tr>
+            <th style="border: 1px solid black; padding: 5px;">My</th>
+            <th style="border: 1px solid black; padding: 5px;">Table</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 5px;">Hello</td>
+            <td style="border: 1px solid black; padding: 5px;">World</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 5px;">I'm</td>
+            <td style="border: 1px solid black; padding: 5px;">Disha</td>
+        </tr>
+    </table>
+    <br>
+    <h1 style="color: blue;">Form</h1>
+    <!-- Form Tag with External Style -->
+    <form action="submit.php" method="post" class="my-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" style="margin-bottom: 10px;"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" style="margin-bottom: 10px;"><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" style="margin-bottom: 10px;"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
